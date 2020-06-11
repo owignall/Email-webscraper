@@ -1,11 +1,6 @@
 # This script will first take an input url, then search the website for emails, and then finally return the scraped emails.
 import re
 import requests
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
-from bs4 import BeautifulSoup
 from time import sleep
 
 # Scraping functions
