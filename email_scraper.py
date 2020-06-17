@@ -44,7 +44,7 @@ def find_site_emails(url):
             print('Searching: ' + link)
             page_emails, links = find_page_emails(link)
             site_emails.extend(page_emails)
-        except: pass
+        except Exception: pass
     results = list(set(site_emails))
     return results
 # Main function
@@ -62,7 +62,7 @@ def main():
             print("\n| Results |")
             for email in email_list:
                 print(email)
-        except:
+        except Exception:
             print("\n| Result |\nScaper was unable to find the site you entered.")
         sleep(1)
 
